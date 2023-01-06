@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-01-07 T7 04:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Index</title>
+<meta name="author" content="nhannht" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Index</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd4fe637">1. Nhannht &rsquo;s Hardware</a>
+<ul>
+<li><a href="#org95218ac">1.1. uname</a></li>
+<li><a href="#org8080fef">1.2. lscpu</a></li>
+<li><a href="#org5116e8c">1.3. lshw</a></li>
+<li><a href="#org356f8eb">1.4. lspci</a></li>
+<li><a href="#orgae0f7e6">1.5. lsusb</a></li>
+<li><a href="#org8249684">1.6. lsblk</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd4fe637" class="outline-2">
+<h2 id="orgd4fe637"><span class="section-number-2">1.</span> Nhannht &rsquo;s Hardware</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+My hardware collection of information in Thu Jan  5 10:43:35 PM +07 2023
+</p>
+</div>
+
+<div id="outline-container-org95218ac" class="outline-3">
+<h3 id="org95218ac"><span class="section-number-3">1.1.</span> uname</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+<pre class="src src-shell">uname --kernel-name  --machine --operating-system --processor --kernel-release
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-example">Linux 5.15.86-1-lts x86_64 unknown GNU/Linux
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8080fef" class="outline-3">
+<h3 id="org8080fef"><span class="section-number-3">1.2.</span> lscpu</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+<pre class="src src-shell">lscpu
+</pre>
+</div>
+
+<pre class="example" id="orgd92d3ac">
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   39 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          4
+On-line CPU(s) list:             0-3
+Vendor ID:                       GenuineIntel
+Model name:                      Intel(R) Core(TM) i3-7100U CPU @ 2.40GHz
+CPU family:                      6
+Model:                           142
+Thread(s) per core:              2
+Core(s) per socket:              2
+Socket(s):                       1
+Stepping:                        9
+CPU(s) scaling MHz:              38%
+CPU max MHz:                     2400.0000
+CPU min MHz:                     400.0000
+BogoMIPS:                        4800.00
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualization:                  VT-x
+L1d cache:                       64 KiB (2 instances)
+L1i cache:                       64 KiB (2 instances)
+L2 cache:                        512 KiB (2 instances)
+L3 cache:                        3 MiB (1 instance)
+NUMA node(s):                    1
+NUMA node0 CPU(s):               0-3
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Retbleed:          Mitigation; IBRS
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Mitigation; Microcode
+Vulnerability Tsx async abort:   Not affected
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org5116e8c" class="outline-3">
+<h3 id="org5116e8c"><span class="section-number-3">1.3.</span> lshw</h3>
+<div class="outline-text-3" id="text-1-3">
+<div class="org-src-container">
+<pre class="src src-shell">lshw -json
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-json">[
+{
+  <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"vermin-x510ua"</span>,
+  <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"system"</span>,
+  <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+  <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Computer"</span>,
+  <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+  <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+    <span style="color: #005077; font-weight: bold;">"smp"</span> : <span style="color: #30440f;">"Symmetric Multi-Processing"</span>,
+    <span style="color: #005077; font-weight: bold;">"vsyscall32"</span> : <span style="color: #30440f;">"32-bit processes"</span>
+  },
+  <span style="color: #005077; font-weight: bold;">"children"</span> : [
+    {
+      <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"core"</span>,
+      <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"bus"</span>,
+      <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+      <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Motherboard"</span>,
+      <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"0"</span>,
+      <span style="color: #005077; font-weight: bold;">"children"</span> : [
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"memory"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"memory"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"System memory"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"0"</span>,
+          <span style="color: #005077; font-weight: bold;">"units"</span> : <span style="color: #30440f;">"bytes"</span>,
+          <span style="color: #005077; font-weight: bold;">"size"</span> : <span style="color: #0000c0;">12884901888</span>
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"cpu"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"processor"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Intel(R) Core(TM) i3-7100U CPU @ 2.40GHz"</span>,
+          <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corp."</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1"</span>,
+          <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"cpu@0"</span>,
+          <span style="color: #005077; font-weight: bold;">"units"</span> : <span style="color: #30440f;">"Hz"</span>,
+          <span style="color: #005077; font-weight: bold;">"size"</span> : <span style="color: #0000c0;">2400000000</span>,
+          <span style="color: #005077; font-weight: bold;">"capacity"</span> : <span style="color: #0000c0;">2400000000</span>,
+          <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"fpu"</span> : <span style="color: #30440f;">"mathematical co-processor"</span>,
+            <span style="color: #005077; font-weight: bold;">"fpu_exception"</span> : <span style="color: #30440f;">"FPU exceptions reporting"</span>,
+            <span style="color: #005077; font-weight: bold;">"wp"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"vme"</span> : <span style="color: #30440f;">"virtual mode extensions"</span>,
+            <span style="color: #005077; font-weight: bold;">"de"</span> : <span style="color: #30440f;">"debugging extensions"</span>,
+            <span style="color: #005077; font-weight: bold;">"pse"</span> : <span style="color: #30440f;">"page size extensions"</span>,
+            <span style="color: #005077; font-weight: bold;">"tsc"</span> : <span style="color: #30440f;">"time stamp counter"</span>,
+            <span style="color: #005077; font-weight: bold;">"msr"</span> : <span style="color: #30440f;">"model-specific registers"</span>,
+            <span style="color: #005077; font-weight: bold;">"pae"</span> : <span style="color: #30440f;">"4GB+ memory addressing (Physical Address Extension)"</span>,
+            <span style="color: #005077; font-weight: bold;">"mce"</span> : <span style="color: #30440f;">"machine check exceptions"</span>,
+            <span style="color: #005077; font-weight: bold;">"cx8"</span> : <span style="color: #30440f;">"compare and exchange 8-byte"</span>,
+            <span style="color: #005077; font-weight: bold;">"apic"</span> : <span style="color: #30440f;">"on-chip advanced programmable interrupt controller (APIC)"</span>,
+            <span style="color: #005077; font-weight: bold;">"sep"</span> : <span style="color: #30440f;">"fast system calls"</span>,
+            <span style="color: #005077; font-weight: bold;">"mtrr"</span> : <span style="color: #30440f;">"memory type range registers"</span>,
+            <span style="color: #005077; font-weight: bold;">"pge"</span> : <span style="color: #30440f;">"page global enable"</span>,
+            <span style="color: #005077; font-weight: bold;">"mca"</span> : <span style="color: #30440f;">"machine check architecture"</span>,
+            <span style="color: #005077; font-weight: bold;">"cmov"</span> : <span style="color: #30440f;">"conditional move instruction"</span>,
+            <span style="color: #005077; font-weight: bold;">"pat"</span> : <span style="color: #30440f;">"page attribute table"</span>,
+            <span style="color: #005077; font-weight: bold;">"pse36"</span> : <span style="color: #30440f;">"36-bit page size extensions"</span>,
+            <span style="color: #005077; font-weight: bold;">"clflush"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"dts"</span> : <span style="color: #30440f;">"debug trace and EMON store MSRs"</span>,
+            <span style="color: #005077; font-weight: bold;">"acpi"</span> : <span style="color: #30440f;">"thermal control (ACPI)"</span>,
+            <span style="color: #005077; font-weight: bold;">"mmx"</span> : <span style="color: #30440f;">"multimedia extensions (MMX)"</span>,
+            <span style="color: #005077; font-weight: bold;">"fxsr"</span> : <span style="color: #30440f;">"fast floating point save/restore"</span>,
+            <span style="color: #005077; font-weight: bold;">"sse"</span> : <span style="color: #30440f;">"streaming SIMD extensions (SSE)"</span>,
+            <span style="color: #005077; font-weight: bold;">"sse2"</span> : <span style="color: #30440f;">"streaming SIMD extensions (SSE2)"</span>,
+            <span style="color: #005077; font-weight: bold;">"ss"</span> : <span style="color: #30440f;">"self-snoop"</span>,
+            <span style="color: #005077; font-weight: bold;">"ht"</span> : <span style="color: #30440f;">"HyperThreading"</span>,
+            <span style="color: #005077; font-weight: bold;">"tm"</span> : <span style="color: #30440f;">"thermal interrupt and status"</span>,
+            <span style="color: #005077; font-weight: bold;">"pbe"</span> : <span style="color: #30440f;">"pending break event"</span>,
+            <span style="color: #005077; font-weight: bold;">"syscall"</span> : <span style="color: #30440f;">"fast system calls"</span>,
+            <span style="color: #005077; font-weight: bold;">"nx"</span> : <span style="color: #30440f;">"no-execute bit (NX)"</span>,
+            <span style="color: #005077; font-weight: bold;">"pdpe1gb"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"rdtscp"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"x86-64"</span> : <span style="color: #30440f;">"64bits extensions (x86-64)"</span>,
+            <span style="color: #005077; font-weight: bold;">"constant_tsc"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"art"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"arch_perfmon"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pebs"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"bts"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"rep_good"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"nopl"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"xtopology"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"nonstop_tsc"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"cpuid"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"aperfmperf"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pni"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pclmulqdq"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"dtes64"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"monitor"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"ds_cpl"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"vmx"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"est"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"tm2"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"ssse3"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"sdbg"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"fma"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"cx16"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"xtpr"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pdcm"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pcid"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"sse4_1"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"sse4_2"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"x2apic"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"movbe"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"popcnt"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"tsc_deadline_timer"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"aes"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"xsave"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"avx"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"f16c"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"rdrand"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"lahf_lm"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"abm"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"3dnowprefetch"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"cpuid_fault"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"epb"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"invpcid_single"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pti"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"ssbd"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"ibrs"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"ibpb"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"stibp"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"tpr_shadow"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"vnmi"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"flexpriority"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"ept"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"vpid"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"ept_ad"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"fsgsbase"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"tsc_adjust"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"bmi1"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"avx2"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"smep"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"bmi2"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"erms"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"invpcid"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"mpx"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"rdseed"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"adx"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"smap"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"clflushopt"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"intel_pt"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"xsaveopt"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"xsavec"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"xgetbv1"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"xsaves"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"dtherm"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"arat"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pln"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"pts"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"hwp"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"hwp_notify"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"hwp_act_window"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"hwp_epp"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"md_clear"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"flush_l1d"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"arch_capabilities"</span> : <span style="color: #55348e;">true</span>,
+            <span style="color: #005077; font-weight: bold;">"cpufreq"</span> : <span style="color: #30440f;">"CPU Frequency scaling"</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pci"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"bridge"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCIBUS:0000:00"</span>,
+          <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Host bridge"</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers"</span>,
+          <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"100"</span>,
+          <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:00.0"</span>,
+          <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"02"</span>,
+          <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">32</span>,
+          <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"skl_uncore"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"children"</span> : [
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"display"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"display"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:02.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"VGA compatible controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"HD Graphics 620"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"2"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:02.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"02"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"i915"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"vga_controller"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>,
+                <span style="color: #005077; font-weight: bold;">"rom"</span> : <span style="color: #30440f;">"extension ROM"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"generic:0"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:04.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Signal processing controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"4"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:04.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"02"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"proc_thermal"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"usb"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"bus"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:14.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"USB controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP USB 3.0 xHCI Controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"14"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:14.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"xhci_hcd"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"xhci"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"generic:1"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:14.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Signal processing controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP Thermal subsystem"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"14.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:14.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"intel_pch_thermal"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"generic:2"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:15.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Signal processing controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP Serial IO I2C Controller #0"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"15"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:15.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"intel-lpss"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"generic:3"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:15.1"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Signal processing controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP Serial IO I2C Controller #1"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"15.1"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:15.1"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"intel-lpss"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"communication"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"communication"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:16.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Communication controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP CSME HECI #1"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"16"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:16.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"mei_me"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"sata"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"storage"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:17.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"SATA controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP SATA Controller [AHCI mode]"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"17"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:17.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">32</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">66000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"ahci"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"sata"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"ahci_1.0"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pci:0"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"bridge"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCIBUS:0000:01"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"PCI bridge"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP PCI Express Root Port #1"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1c"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1c.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"f1"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">32</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"pcieport"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"pci"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"normal_decode"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pci:1"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"bridge"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCIBUS:0000:02"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"PCI bridge"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP PCI Express Root Port #6"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1c.5"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1c.5"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"f1"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">32</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"pcieport"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"pci"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"normal_decode"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"children"</span> : [
+                {
+                  <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"network"</span>,
+                  <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"network"</span>,
+                  <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+                  <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:02:00.0"</span>,
+                  <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Wireless interface"</span>,
+                  <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Wireless 8265 / 8275"</span>,
+                  <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+                  <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"0"</span>,
+                  <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:02:00.0"</span>,
+                  <span style="color: #005077; font-weight: bold;">"logicalname"</span> : <span style="color: #30440f;">"wlan0"</span>,
+                  <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"78"</span>,
+                  <span style="color: #005077; font-weight: bold;">"serial"</span> : <span style="color: #30440f;">"60:f6:77:ef:81:34"</span>,
+                  <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+                  <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+                  <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                    <span style="color: #005077; font-weight: bold;">"broadcast"</span> : <span style="color: #30440f;">"yes"</span>,
+                    <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"iwlwifi"</span>,
+                    <span style="color: #005077; font-weight: bold;">"driverversion"</span> : <span style="color: #30440f;">"5.15.86-1-lts"</span>,
+                    <span style="color: #005077; font-weight: bold;">"firmware"</span> : <span style="color: #30440f;">"36.ca7b901d.0 8265-36.ucode"</span>,
+                    <span style="color: #005077; font-weight: bold;">"ip"</span> : <span style="color: #30440f;">"192.168.1.37"</span>,
+                    <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>,
+                    <span style="color: #005077; font-weight: bold;">"link"</span> : <span style="color: #30440f;">"yes"</span>,
+                    <span style="color: #005077; font-weight: bold;">"multicast"</span> : <span style="color: #30440f;">"yes"</span>,
+                    <span style="color: #005077; font-weight: bold;">"wireless"</span> : <span style="color: #30440f;">"IEEE 802.11"</span>
+                  },
+                  <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                    <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                    <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>,
+                    <span style="color: #005077; font-weight: bold;">"ethernet"</span> : <span style="color: #55348e;">true</span>,
+                    <span style="color: #005077; font-weight: bold;">"physical"</span> : <span style="color: #30440f;">"Physical interface"</span>,
+                    <span style="color: #005077; font-weight: bold;">"wireless"</span> : <span style="color: #30440f;">"Wireless-LAN"</span>
+                  }
+                }
+              ]
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"generic:4"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:1e.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Signal processing controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP Serial IO UART Controller #0"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1e"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1e.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"intel-lpss"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"generic:5"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:1e.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Signal processing controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP Serial IO SPI Controller #0"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1e.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1e.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"intel-lpss"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"isa"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"bridge"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:1f.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"ISA bridge"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point LPC Controller/eSPI Controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1f"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1f.0"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">32</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"isa"</span> : <span style="color: #55348e;">true</span>,
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"memory"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"memory"</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:1f.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Memory controller"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP PMC"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1f.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1f.2"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">32</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"multimedia"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"multimedia"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:1f.3"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"Audio device"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP HD Audio"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1f.3"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1f.3"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"snd_hda_intel"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"32"</span>
+              },
+              <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+                <span style="color: #005077; font-weight: bold;">"bus_master"</span> : <span style="color: #30440f;">"bus mastering"</span>,
+                <span style="color: #005077; font-weight: bold;">"cap_list"</span> : <span style="color: #30440f;">"PCI capabilities listing"</span>
+              }
+            },
+            {
+              <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"serial"</span>,
+              <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"bus"</span>,
+              <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+              <span style="color: #005077; font-weight: bold;">"handle"</span> : <span style="color: #30440f;">"PCI:0000:00:1f.4"</span>,
+              <span style="color: #005077; font-weight: bold;">"description"</span> : <span style="color: #30440f;">"SMBus"</span>,
+              <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Sunrise Point-LP SMBus"</span>,
+              <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Intel Corporation"</span>,
+              <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"1f.4"</span>,
+              <span style="color: #005077; font-weight: bold;">"businfo"</span> : <span style="color: #30440f;">"pci@0000:00:1f.4"</span>,
+              <span style="color: #005077; font-weight: bold;">"version"</span> : <span style="color: #30440f;">"21"</span>,
+              <span style="color: #005077; font-weight: bold;">"width"</span> : <span style="color: #0000c0;">64</span>,
+              <span style="color: #005077; font-weight: bold;">"clock"</span> : <span style="color: #0000c0;">33000000</span>,
+              <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+                <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"i801_smbus"</span>,
+                <span style="color: #005077; font-weight: bold;">"latency"</span> : <span style="color: #30440f;">"0"</span>
+              }
+            }
+          ]
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:00"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"system"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Motherboard registers"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"2"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"system"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:01"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"system"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"AT Real-Time Clock"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"3"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"rtc_cmos"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:02"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"PnP device INT3f0d"</span>,
+          <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Interphase Corporation"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"4"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"system"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:03"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"generic"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"PnP device ATK3001"</span>,
+          <span style="color: #005077; font-weight: bold;">"vendor"</span> : <span style="color: #30440f;">"Allied Telesyn Int'l"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"5"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"i8042 kbd"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:04"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"system"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Motherboard registers"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"6"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"system"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:05"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"system"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Motherboard registers"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"7"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"system"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:06"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"system"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Motherboard registers"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"8"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"system"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        },
+        {
+          <span style="color: #005077; font-weight: bold;">"id"</span> : <span style="color: #30440f;">"pnp00:07"</span>,
+          <span style="color: #005077; font-weight: bold;">"class"</span> : <span style="color: #30440f;">"system"</span>,
+          <span style="color: #005077; font-weight: bold;">"claimed"</span> : <span style="color: #55348e;">true</span>,
+          <span style="color: #005077; font-weight: bold;">"product"</span> : <span style="color: #30440f;">"Motherboard registers"</span>,
+          <span style="color: #005077; font-weight: bold;">"physid"</span> : <span style="color: #30440f;">"9"</span>,
+          <span style="color: #005077; font-weight: bold;">"configuration"</span> : {
+            <span style="color: #005077; font-weight: bold;">"driver"</span> : <span style="color: #30440f;">"system"</span>
+          },
+          <span style="color: #005077; font-weight: bold;">"capabilities"</span> : {
+            <span style="color: #005077; font-weight: bold;">"pnp"</span> : <span style="color: #55348e;">true</span>
+          }
+        }
+      ]
+    }
+  ]
+}
+]
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org356f8eb" class="outline-3">
+<h3 id="org356f8eb"><span class="section-number-3">1.4.</span> lspci</h3>
+<div class="outline-text-3" id="text-1-4">
+<div class="org-src-container">
+<pre class="src src-shell">lspci
+</pre>
+</div>
+
+<pre class="example" id="org0c14a73">
+00:00.0 Host bridge: Intel Corporation Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers (rev 02)
+00:02.0 VGA compatible controller: Intel Corporation HD Graphics 620 (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 02)
+00:14.0 USB controller: Intel Corporation Sunrise Point-LP USB 3.0 xHCI Controller (rev 21)
+00:14.2 Signal processing controller: Intel Corporation Sunrise Point-LP Thermal subsystem (rev 21)
+00:15.0 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO I2C Controller #0 (rev 21)
+00:15.1 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO I2C Controller #1 (rev 21)
+00:16.0 Communication controller: Intel Corporation Sunrise Point-LP CSME HECI #1 (rev 21)
+00:17.0 SATA controller: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] (rev 21)
+00:1c.0 PCI bridge: Intel Corporation Sunrise Point-LP PCI Express Root Port #1 (rev f1)
+00:1c.5 PCI bridge: Intel Corporation Sunrise Point-LP PCI Express Root Port #6 (rev f1)
+00:1e.0 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO UART Controller #0 (rev 21)
+00:1e.2 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO SPI Controller #0 (rev 21)
+00:1f.0 ISA bridge: Intel Corporation Sunrise Point LPC Controller/eSPI Controller (rev 21)
+00:1f.2 Memory controller: Intel Corporation Sunrise Point-LP PMC (rev 21)
+00:1f.3 Audio device: Intel Corporation Sunrise Point-LP HD Audio (rev 21)
+00:1f.4 SMBus: Intel Corporation Sunrise Point-LP SMBus (rev 21)
+02:00.0 Network controller: Intel Corporation Wireless 8265 / 8275 (rev 78)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgae0f7e6" class="outline-3">
+<h3 id="orgae0f7e6"><span class="section-number-3">1.5.</span> lsusb</h3>
+<div class="outline-text-3" id="text-1-5">
+<div class="org-src-container">
+<pre class="src src-shell">lsusb
+</pre>
+</div>
+
+<pre class="example" id="org62e96af">
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 005: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+Bus 001 Device 055: ID 13d3:5a07 IMC Networks VGA UVC WebCam
+Bus 001 Device 050: ID 046d:c31c Logitech, Inc. Keyboard K120
+Bus 001 Device 002: ID 0458:0186 KYE Systems Corp. (Mouse Systems) Genius DX-120 Mouse
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org8249684" class="outline-3">
+<h3 id="org8249684"><span class="section-number-3">1.6.</span> lsblk</h3>
+<div class="outline-text-3" id="text-1-6">
+<div class="org-src-container">
+<pre class="src src-shell">lsblk
+</pre>
+</div>
+
+<pre class="example" id="org6aa364b">
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0 447.1G  0 disk
+├─sda1   8:1    0   100M  0 part /boot/efi
+├─sda2   8:2    0    16M  0 part
+├─sda3   8:3    0    97G  0 part
+└─sda4   8:4    0   350G  0 part /
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: nhannht</p>
+<p class="date">Created: 2023-01-07 T7 04:33</p>
+</div>
+</body>
+</html>
